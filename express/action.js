@@ -5,11 +5,11 @@ app.get('/',function(req,res){
     res.sendfile(__dirname+'/home.html');
 });
 app.get('/home',function(req,res){
-    res.send("This is home page");
+    res.sendfile(__dirname+"/home.html");
     
 });
 app.get('/user/:id',function(req,res){
-    res.send("This is home page"+req.params.id);
+    res.send("This is home page "+req.params.id);
     
 });
 
